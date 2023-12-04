@@ -1,0 +1,8 @@
+2023-06-14T08:42:36.7117519Z ##[section]Starting: Prepare job android-build
+2023-06-14T08:42:36.7297676Z Evaluating strategy
+2023-06-14T08:42:36.7302595Z Creating job '__default'
+2023-06-14T08:42:36.7305084Z Evaluating timeout
+2023-06-14T08:42:36.7305137Z Evaluating cancel timeout
+2023-06-14T08:42:36.7305163Z Evaluating continue on error
+2023-06-14T08:42:36.7305188Z Evaluating target
+2023-06-14T08:42:36.7306863Z ##[section]Finishing: Prepare job android-build

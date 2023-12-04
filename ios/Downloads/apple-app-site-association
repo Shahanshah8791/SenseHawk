@@ -1,0 +1,40 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "RB88742LKN.fr.bouyguestelecom.suiviconsobte.dev",
+          "E53UJMJ73K.fr.bouyguestelecom.suiviconsobte.dev",
+          "MHT27ATPQ7.fr.bouyguestelecom.suiviconsobte.dev",
+          "RB88742LKN.fr.bouyguestelecom.suiviconsobte",
+          "E53UJMJ73K.fr.bouyguestelecom.suiviconsobte",
+          "MHT27ATPQ7.fr.bouyguestelecom.suiviconsobte"
+        ],
+        "components": [
+          {
+            "#": "applications-suivi-conso",
+            "comment": "go mon gars"
+          },
+          {
+            "/": "/*",
+            "comment": "Matches any URL with a path that starts with /buy/."
+          },
+          {
+            "/": "/pages/*",
+            "comment": ""
+          }
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "RB88742LKN.fr.bouyguestelecom.suiviconsobte.dev",
+      "E53UJMJ73K.fr.bouyguestelecom.suiviconsobte.dev",
+      "MHT27ATPQ7.fr.bouyguestelecom.suiviconsobte.dev",
+      "RB88742LKN.fr.bouyguestelecom.suiviconsobte",
+      "E53UJMJ73K.fr.bouyguestelecom.suiviconsobte",
+      "MHT27ATPQ7.fr.bouyguestelecom.suiviconsobte"
+    ]
+  }
+}

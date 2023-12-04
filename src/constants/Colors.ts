@@ -1,0 +1,16 @@
+export default {
+  color_1BAC4B: '#1BAC4B',
+  color_E3E7EC: '#E3E7EC',
+  color_78828A: '#78828A',
+  color_FFFFFF: '#ffffff',
+  color_000000: '#000000',
+  color_111111: '#111111',
+  color_6C6C6C: '#6C6C6C',
+  color_EAEAEA: '#EAEAEA',
+  color_FF0000: '#ff0000',
+  color_F8F8F8: '#F8F8F8',
+  color_191919: '#191919',
+  color_3A4750: '#3A4750',
+  color_303841: '#303841',
+  color_FF9529: '#FF9529',
+};

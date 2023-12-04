@@ -1,0 +1,32 @@
+2023-06-14T08:54:19.2895090Z ##[group]Run cd apps/candidate && npx react-native bundle --entry-file ./src/main.tsx --platform ios --dev false --bundle-output ios/main.jsbundle --assets-dest ios
+2023-06-14T08:54:19.2897330Z [36;1mcd apps/candidate && npx react-native bundle --entry-file ./src/main.tsx --platform ios --dev false --bundle-output ios/main.jsbundle --assets-dest ios[0m
+2023-06-14T08:54:19.7996990Z shell: /bin/bash -e {0}
+2023-06-14T08:54:19.7997310Z env:
+2023-06-14T08:54:19.7997740Z   WORKSPACE: apps/candidate/ios/***.xcworkspace
+2023-06-14T08:54:19.7998080Z   SCHEME: ***
+2023-06-14T08:54:19.7998360Z   CONFIGURATION: Release
+2023-06-14T08:54:19.7998710Z   ARCHIVE_PATH: build/***.xcarchive
+2023-06-14T08:54:19.7999030Z   EXPORT_PATH_PROD: prod/
+2023-06-14T08:54:19.7999390Z   PLIST_PATH_PROD: ios/***/ProdExport.plist
+2023-06-14T08:54:19.7999730Z   ARTIFACT_NAME: ***.ipa
+2023-06-14T08:54:19.8000040Z   ARTIFACT_PATH_PROD: prod/
+2023-06-14T08:54:19.8000380Z   UPLOAD_FILE_PROD: prod/***.ipa
+2023-06-14T08:54:19.8019350Z   BUILD_CERTIFICATE_BASE64: ***
+2023-06-14T08:54:19.8019940Z   P12_PASSWORD: ***
+2023-06-14T08:54:20.0042540Z   BUILD_PROVISION_PROFILE_BASE64: ***
+2023-06-14T08:54:20.0043150Z   KEYCHAIN_PASSWORD: ***
+2023-06-14T08:54:20.0043470Z   IOS_TEAM_ID: ***
+2023-06-14T08:54:20.0043820Z   APPSTORE_ISSUER_ID: ***
+2023-06-14T08:54:20.0044140Z   APPSTORE_API_KEY_ID: ***
+2023-06-14T08:54:20.0045020Z   APPSTORE_API_PRIVATE_KEY: ***
+2023-06-14T08:54:20.0045350Z   APP_PROJECT_NAME: ***
+2023-06-14T08:54:20.0045640Z ##[endgroup]
+2023-06-14T08:54:22.3490440Z warn Package @sentry/react-native contains invalid configuration: "dependency.platforms.ios.sharedLibraries" is not allowed,"dependency.hooks" is not allowed. Please verify it's properly linked using "react-native config" command and contact the package maintainers about this.
+2023-06-14T08:54:24.7488570Z                 Welcome to Metro v0.72.3
+2023-06-14T08:54:24.7489510Z               Fast - Scalable - Integrated
+2023-06-14T08:54:24.7489970Z 
+2023-06-14T08:54:24.7490020Z 
+2023-06-14T08:57:37.0833850Z info Writing bundle output to:, ios/main.jsbundle
+2023-06-14T08:57:37.1073750Z info Done writing bundle output
+2023-06-14T08:57:39.4599510Z info Copying 69 asset files
+2023-06-14T08:57:39.5655040Z info Done copying assets

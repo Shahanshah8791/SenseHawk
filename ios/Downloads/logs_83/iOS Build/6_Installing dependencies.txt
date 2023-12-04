@@ -1,0 +1,100 @@
+2023-06-14T08:43:09.3605580Z ##[group]Run yarn --version
+2023-06-14T08:43:09.3606520Z [36;1myarn --version[0m
+2023-06-14T08:43:09.3606910Z [36;1mnode --version[0m
+2023-06-14T08:43:09.3607460Z [36;1myarn install --frozen-lockfile[0m
+2023-06-14T08:43:09.3865180Z shell: /bin/bash -e {0}
+2023-06-14T08:43:09.3865810Z env:
+2023-06-14T08:43:09.3871520Z   WORKSPACE: apps/candidate/ios/***.xcworkspace
+2023-06-14T08:43:09.3872170Z   SCHEME: ***
+2023-06-14T08:43:09.3872520Z   CONFIGURATION: Release
+2023-06-14T08:43:09.3873190Z   ARCHIVE_PATH: build/***.xcarchive
+2023-06-14T08:43:09.3873770Z   EXPORT_PATH_PROD: prod/
+2023-06-14T08:43:09.3874230Z   PLIST_PATH_PROD: ios/***/ProdExport.plist
+2023-06-14T08:43:09.3874840Z   ARTIFACT_NAME: ***.ipa
+2023-06-14T08:43:09.3875240Z   ARTIFACT_PATH_PROD: prod/
+2023-06-14T08:43:09.3875660Z   UPLOAD_FILE_PROD: prod/***.ipa
+2023-06-14T08:43:09.3898240Z   BUILD_CERTIFICATE_BASE64: ***
+2023-06-14T08:43:09.3898770Z   P12_PASSWORD: ***
+2023-06-14T08:43:09.6755470Z   BUILD_PROVISION_PROFILE_BASE64: ***
+2023-06-14T08:43:09.6756460Z   KEYCHAIN_PASSWORD: ***
+2023-06-14T08:43:09.6756900Z   IOS_TEAM_ID: ***
+2023-06-14T08:43:09.6757330Z   APPSTORE_ISSUER_ID: ***
+2023-06-14T08:43:09.6757940Z   APPSTORE_API_KEY_ID: ***
+2023-06-14T08:43:09.6758920Z   APPSTORE_API_PRIVATE_KEY: ***
+2023-06-14T08:43:09.6760440Z   APP_PROJECT_NAME: ***
+2023-06-14T08:43:09.6760980Z ##[endgroup]
+2023-06-14T08:43:09.9290500Z 1.22.19
+2023-06-14T08:43:09.9555960Z v18.9.0
+2023-06-14T08:43:10.1789850Z yarn install v1.22.19
+2023-06-14T08:43:10.4592480Z [1/4] Resolving packages...
+2023-06-14T08:43:11.9717510Z [2/4] Fetching packages...
+2023-06-14T08:44:19.3207050Z warning np@7.7.0: The engine "git" appears to be invalid.
+2023-06-14T08:44:19.3279810Z [3/4] Linking dependencies...
+2023-06-14T08:44:19.3325960Z warning " > @react-native-seoul/masonry-list@1.4.1" has unmet peer dependency "expo@*".
+2023-06-14T08:44:19.3350740Z warning " > react-native@0.70.5" has incorrect peer dependency "react@18.1.0".
+2023-06-14T08:44:19.3351770Z warning " > metro-react-native-babel-transformer@0.72.3" has unmet peer dependency "@babel/core@*".
+2023-06-14T08:44:19.3354240Z warning " > metro-react-native-babel-preset@0.72.3" has unmet peer dependency "@babel/core@*".
+2023-06-14T08:44:19.3355340Z warning "react-native > react-native-codegen > jscodeshift@0.13.1" has unmet peer dependency "@babel/preset-env@^7.1.6".
+2023-06-14T08:44:19.3376390Z warning "@storybook/addon-essentials > @storybook/addon-docs > @babel/plugin-transform-react-jsx@7.21.5" has unmet peer dependency "@babel/core@^7.0.0-0".
+2023-06-14T08:44:19.3429750Z warning " > styled-components@5.3.10" has unmet peer dependency "react-dom@>= 16.8.0".
+2023-06-14T08:44:19.3430730Z warning " > styled-components@5.3.10" has unmet peer dependency "react-is@>= 16.8.0".
+2023-06-14T08:44:19.3472870Z warning "babel-jest > babel-preset-jest@28.1.3" has unmet peer dependency "@babel/core@^7.0.0".
+2023-06-14T08:44:19.3551240Z warning " > @storybook/addon-essentials@6.5.9" has unmet peer dependency "@babel/core@^7.9.6".
+2023-06-14T08:44:19.3563050Z warning "@storybook/addon-essentials > @storybook/addons@6.5.9" has unmet peer dependency "react-dom@^16.8.0 || ^17.0.0 || ^18.0.0".
+2023-06-14T08:44:19.3564820Z warning "@storybook/addon-essentials > @storybook/api@6.5.9" has unmet peer dependency "react-dom@^16.8.0 || ^17.0.0 || ^18.0.0".
+2023-06-14T08:44:19.3566320Z warning "@storybook/addon-essentials > @storybook/core-common@6.5.9" has unmet peer dependency "react-dom@^16.8.0 || ^17.0.0 || ^18.0.0".
+2023-06-14T08:44:19.3567740Z warning "@storybook/addon-essentials > @storybook/addon-actions > @storybook/components@6.5.9" has unmet peer dependency "react-dom@^16.8.0 || ^17.0.0 || ^18.0.0".
+2023-06-14T08:44:19.3569330Z warning "@storybook/addon-essentials > @storybook/addon-actions > @storybook/theming@6.5.9" has unmet peer dependency "react-dom@^16.8.0 || ^17.0.0 || ^18.0.0".
+2023-06-14T08:44:19.3570530Z warning "@storybook/addon-essentials > @storybook/addon-actions > react-inspector@5.1.1" has incorrect peer dependency "react@^16.8.4 || ^17.0.0".
+2023-06-14T08:44:19.3573340Z warning "@storybook/core-server > @storybook/store@6.5.9" has unmet peer dependency "react-dom@^16.8.0 || ^17.0.0 || ^18.0.0".
+2023-06-14T08:44:19.3575260Z warning "@storybook/addon-essentials > @storybook/addon-docs > @mdx-js/react@1.6.22" has incorrect peer dependency "react@^16.13.1 || ^17.0.0".
+2023-06-14T08:44:19.3576850Z warning "@storybook/addon-essentials > @storybook/addon-docs > @storybook/preview-web@6.5.9" has unmet peer dependency "react-dom@^16.8.0 || ^17.0.0 || ^18.0.0".
+2023-06-14T08:44:19.3578380Z warning "@storybook/addon-essentials > @storybook/addon-docs > @storybook/source-loader@6.5.9" has unmet peer dependency "react-dom@^16.8.0 || ^17.0.0 || ^18.0.0".
+2023-06-14T08:44:19.3580330Z warning "@storybook/addon-essentials > @storybook/addons > @storybook/router@6.5.9" has unmet peer dependency "react-dom@^16.8.0 || ^17.0.0 || ^18.0.0".
+2023-06-14T08:44:19.3588280Z warning " > @storybook/addon-ondevice-actions@6.5.3" has unmet peer dependency "@storybook/addon-actions@^6.5.14".
+2023-06-14T08:44:19.3590880Z warning "@storybook/addon-ondevice-actions > @storybook/addons@6.5.16" has unmet peer dependency "react-dom@^16.8.0 || ^17.0.0 || ^18.0.0".
+2023-06-14T08:44:19.3593180Z warning "@storybook/addon-ondevice-backgrounds > @storybook/api@6.5.16" has unmet peer dependency "react-dom@^16.8.0 || ^17.0.0 || ^18.0.0".
+2023-06-14T08:44:19.3624920Z warning "@storybook/addon-ondevice-actions > @storybook/addons > @storybook/router@6.5.16" has unmet peer dependency "react-dom@^16.8.0 || ^17.0.0 || ^18.0.0".
+2023-06-14T08:44:19.3633020Z warning "@storybook/addon-ondevice-actions > @storybook/addons > @storybook/theming@6.5.16" has unmet peer dependency "react-dom@^16.8.0 || ^17.0.0 || ^18.0.0".
+2023-06-14T08:44:19.3634710Z warning "@storybook/addon-ondevice-backgrounds > @storybook/client-api@6.5.16" has unmet peer dependency "react-dom@^16.8.0 || ^17.0.0 || ^18.0.0".
+2023-06-14T08:44:19.3636880Z warning "@storybook/addon-ondevice-backgrounds > @storybook/client-api > @storybook/store@6.5.16" has unmet peer dependency "react-dom@^16.8.0 || ^17.0.0 || ^18.0.0".
+2023-06-14T08:44:19.3638650Z warning " > @storybook/addon-ondevice-controls@6.5.3" has unmet peer dependency "@react-native-community/slider@*".
+2023-06-14T08:44:19.3640110Z warning " > @storybook/addon-ondevice-controls@6.5.3" has unmet peer dependency "@storybook/addon-controls@^6.5.14".
+2023-06-14T08:44:19.3641830Z warning "@storybook/addon-ondevice-controls > @emotion/native > @emotion/primitives-core@10.0.27" has unmet peer dependency "@emotion/core@^10.0.27".
+2023-06-14T08:44:19.3643330Z warning " > @storybook/core-server@6.5.9" has unmet peer dependency "react-dom@^16.8.0 || ^17.0.0 || ^18.0.0".
+2023-06-14T08:44:19.3644800Z warning "@storybook/core-server > @storybook/builder-webpack4@6.5.9" has unmet peer dependency "react-dom@^16.8.0 || ^17.0.0 || ^18.0.0".
+2023-06-14T08:44:19.3646460Z warning "@storybook/core-server > @storybook/core-client@6.5.9" has unmet peer dependency "react-dom@^16.8.0 || ^17.0.0 || ^18.0.0".
+2023-06-14T08:44:19.3647990Z warning "@storybook/core-server > @storybook/manager-webpack4@6.5.9" has unmet peer dependency "react-dom@^16.8.0 || ^17.0.0 || ^18.0.0".
+2023-06-14T08:44:19.3650070Z warning "@storybook/core-server > @storybook/builder-webpack4 > @storybook/client-api@6.5.9" has unmet peer dependency "react-dom@^16.8.0 || ^17.0.0 || ^18.0.0".
+2023-06-14T08:44:19.3651690Z warning "@storybook/core-server > @storybook/builder-webpack4 > @storybook/ui@6.5.9" has unmet peer dependency "react-dom@^16.8.0 || ^17.0.0 || ^18.0.0".
+2023-06-14T08:44:19.3653250Z warning "@storybook/react-native > @storybook/addons@6.3.13" has incorrect peer dependency "react@^16.8.0 || ^17.0.0".
+2023-06-14T08:44:19.3654680Z warning "@storybook/react-native > @storybook/addons@6.3.13" has unmet peer dependency "react-dom@^16.8.0 || ^17.0.0".
+2023-06-14T08:44:19.3656100Z warning "@storybook/react-native > @storybook/client-api@6.3.13" has incorrect peer dependency "react@^16.8.0 || ^17.0.0".
+2023-06-14T08:44:19.3657530Z warning "@storybook/react-native > @storybook/client-api@6.3.13" has unmet peer dependency "react-dom@^16.8.0 || ^17.0.0".
+2023-06-14T08:44:19.3659960Z warning "@storybook/react-native > @storybook/core-client@6.3.13" has incorrect peer dependency "react@^16.8.0 || ^17.0.0".
+2023-06-14T08:44:19.3662130Z warning "@storybook/react-native > @storybook/core-client@6.3.13" has unmet peer dependency "react-dom@^16.8.0 || ^17.0.0".
+2023-06-14T08:44:19.3663530Z warning "@storybook/react-native > @storybook/core-client@6.3.13" has unmet peer dependency "webpack@*".
+2023-06-14T08:44:19.3664980Z warning "@storybook/react-native > @storybook/addons > @storybook/api@6.3.13" has incorrect peer dependency "react@^16.8.0 || ^17.0.0".
+2023-06-14T08:44:19.3666440Z warning "@storybook/react-native > @storybook/addons > @storybook/api@6.3.13" has unmet peer dependency "react-dom@^16.8.0 || ^17.0.0".
+2023-06-14T08:44:19.3667960Z warning "@storybook/react-native > @storybook/addons > @storybook/router@6.3.13" has incorrect peer dependency "react@^16.8.0 || ^17.0.0".
+2023-06-14T08:44:19.3669390Z warning "@storybook/react-native > @storybook/addons > @storybook/router@6.3.13" has unmet peer dependency "react-dom@^16.8.0 || ^17.0.0".
+2023-06-14T08:44:19.3670870Z warning "@storybook/react-native > @storybook/addons > @storybook/theming@6.3.13" has incorrect peer dependency "react@^16.8.0 || ^17.0.0".
+2023-06-14T08:44:19.3673130Z warning "@storybook/react-native > @storybook/addons > @storybook/theming@6.3.13" has unmet peer dependency "react-dom@^16.8.0 || ^17.0.0".
+2023-06-14T08:44:19.3675000Z warning "@storybook/react-native > @storybook/core-client > @storybook/ui@6.3.13" has incorrect peer dependency "react@^16.8.0 || ^17.0.0".
+2023-06-14T08:44:19.3676510Z warning "@storybook/react-native > @storybook/core-client > @storybook/ui@6.3.13" has unmet peer dependency "react-dom@^16.8.0 || ^17.0.0".
+2023-06-14T08:44:19.3677800Z warning "@storybook/react-native > @storybook/addons > @storybook/api > @reach/router@1.3.4" has incorrect peer dependency "react@15.x || 16.x || 16.4.0-alpha.0911da3".
+2023-06-14T08:44:19.3679100Z warning "@storybook/react-native > @storybook/addons > @storybook/api > @reach/router@1.3.4" has unmet peer dependency "react-dom@15.x || 16.x || 16.4.0-alpha.0911da3".
+2023-06-14T08:44:19.3680260Z warning "@storybook/react-native > @storybook/core-client > @storybook/ui > @storybook/components@6.3.13" has incorrect peer dependency "react@^16.8.0 || ^17.0.0".
+2023-06-14T08:44:19.3681520Z warning "@storybook/react-native > @storybook/core-client > @storybook/ui > @storybook/components@6.3.13" has unmet peer dependency "react-dom@^16.8.0 || ^17.0.0".
+2023-06-14T08:44:19.3682800Z warning "@storybook/react-native > @storybook/core-client > @storybook/ui > react-draggable@4.4.5" has unmet peer dependency "react-dom@>= 16.3.0".
+2023-06-14T08:44:19.3684120Z warning "@storybook/react-native > @storybook/core-client > @storybook/ui > react-helmet-async@1.3.0" has unmet peer dependency "react-dom@^16.6.0 || ^17.0.0 || ^18.0.0".
+2023-06-14T08:44:19.3685650Z warning "@storybook/react-native > @storybook/addons > @storybook/api > @reach/router > create-react-context@0.3.0" has incorrect peer dependency "react@^0.14.0 || ^15.0.0 || ^16.0.0".
+2023-06-14T08:44:19.3687100Z warning "@storybook/react-native > @storybook/core-client > @storybook/ui > @storybook/components > react-colorful@5.6.1" has unmet peer dependency "react-dom@>=16.8.0".
+2023-06-14T08:44:19.3688480Z warning "@storybook/react-native > @storybook/core-client > @storybook/ui > @storybook/components > react-popper-tooltip@3.1.1" has incorrect peer dependency "react@^16.6.0 || ^17.0.0".
+2023-06-14T08:44:19.3690050Z warning "@storybook/react-native > @storybook/core-client > @storybook/ui > @storybook/components > react-popper-tooltip@3.1.1" has unmet peer dependency "react-dom@^16.6.0 || ^17.0.0".
+2023-06-14T08:44:19.3691490Z warning "@storybook/react-native > @storybook/core-client > @storybook/ui > @storybook/components > react-popper-tooltip > react-popper@2.3.0" has unmet peer dependency "react-dom@^16.8.0 || ^17 || ^18".
+2023-06-14T08:44:19.3693400Z warning " > babel-jest@28.1.1" has unmet peer dependency "@babel/core@^7.8.0".
+2023-06-14T08:45:23.3932960Z [4/4] Building fresh packages...
+2023-06-14T08:47:30.6332670Z $ husky install
+2023-06-14T08:47:31.0335510Z husky - Git hooks installed
+2023-06-14T08:47:31.0440900Z Done in 260.87s.

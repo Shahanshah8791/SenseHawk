@@ -1,0 +1,1679 @@
+{
+	"info": {
+		"_postman_id": "135a65ec-96bb-46ae-85b7-f9fca9b7b490",
+		"name": "TNC Customer App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n \"phoneNumber\":\"96918897\",\r\n \"storeCode\":\"TNC\",\r\n \"passcode\":\"Ha@123\"\r\n}"
+				},
+				"url": {
+					"raw": "{{tnccloud}}/api/customerLogin",
+					"host": [
+						"{{tnccloud}}"
+					],
+					"path": [
+						"api",
+						"customerLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sendOtp",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"phoneNumber\":\"96918897\"\r\n}"
+				},
+				"url": {
+					"raw": "{{tnccloud}}/api/sendOtp",
+					"host": [
+						"{{tnccloud}}"
+					],
+					"path": [
+						"api",
+						"sendOtp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "forgotPasscodeReset",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n \"phoneNumber\":\"96918897\",\r\n \"otp\":\"329994\",\r\n \"newPassCode\":\"654321\"\r\n}"
+				},
+				"url": {
+					"raw": "{{tnccloud}}/api/forgotPasscodeReset",
+					"host": [
+						"{{tnccloud}}"
+					],
+					"path": [
+						"api",
+						"forgotPasscodeReset"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "profilePicture",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "profile",
+							"type": "file",
+							"src": "/D:/Desktop/Facial Reminder.png"
+						},
+						{
+							"key": "siteCode",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "phoneNumber",
+							"value": "96918897",
+							"type": "text"
+						},
+						{
+							"key": "customerCode",
+							"value": "GC01T1100002",
+							"type": "text"
+						},
+						{
+							"key": "notificationFlag",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{tnccloud}}/api/profilePicture",
+					"host": [
+						"{{tnccloud}}"
+					],
+					"path": [
+						"api",
+						"profilePicture"
+					],
+					"query": [
+						{
+							"key": "siteCode",
+							"value": "HS04",
+							"disabled": true
+						},
+						{
+							"key": "phoneNumber",
+							"value": "96287180",
+							"disabled": true
+						},
+						{
+							"key": "customerCode",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "notificationFlag",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dashBoardF21",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{tnccloud}}api/dashBoardF21?siteCode=GCHQ&customerCode=GC01T1100002",
+					"host": [
+						"{{tnccloud}}api"
+					],
+					"path": [
+						"dashBoardF21"
+					],
+					"query": [
+						{
+							"key": "siteCode",
+							"value": "GCHQ"
+						},
+						{
+							"key": "customerCode",
+							"value": "GC01T1100002"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "customerNotification",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{tnccloud}}/api/customerNotification?siteCode=TN01&customerCode=&phoneNumber=96918897&status=OPEN",
+					"host": [
+						"{{tnccloud}}"
+					],
+					"path": [
+						"api",
+						"customerNotification"
+					],
+					"query": [
+						{
+							"key": "siteCode",
+							"value": "TN01"
+						},
+						{
+							"key": "customerCode",
+							"value": ""
+						},
+						{
+							"key": "phoneNumber",
+							"value": "96918897"
+						},
+						{
+							"key": "status",
+							"value": "OPEN"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AvailableSlots",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"slotDate\":\"2021-11-17\"\r\n}"
+				},
+				"url": {
+					"raw": "{{tnccloud}}api/AvailableSlots",
+					"host": [
+						"{{tnccloud}}api"
+					],
+					"path": [
+						"AvailableSlots"
+					]
+				},
+				"description": "Available slots for booking appointment"
+			},
+			"response": []
+		},
+		{
+			"name": "feedbackTreatment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"siteCode\":\"TN01\",\n\t\"customerCode\":\"GC01T1100002\",\n\t\"date\":\"2021-11-21 00:00:00.000\",\n\t\"remark\":\"I had a nice experience\",\n    \"rating\":5.0,\n    \"appointmentId\":\"GCHQS10004\"\n}"
+				},
+				"url": {
+					"raw": "{{tnccloud}}/api/feedbackTreatment",
+					"host": [
+						"{{tnccloud}}"
+					],
+					"path": [
+						"api",
+						"feedbackTreatment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "appointmentSearchF21",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"employeeCode\":\"\",\n \"employeeName\":\"\",\n \"customerCode\":\"GC01T1100002\",\n \"customerName\":\"\", \n \"status\":\"Booking\",\n \"appointmentDate\":\"\"\n}"
+				},
+				"url": {
+					"raw": "{{tnccloud}}api/appointmentSearchF21",
+					"host": [
+						"{{tnccloud}}api"
+					],
+					"path": [
+						"appointmentSearchF21"
+					]
+				},
+				"description": "for order and order detail"
+			},
+			"response": []
+		},
+		{
+			"name": "BrandCategory",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"siteCode\":\"TN01\",\n\t\"brandId\":[]\n}"
+				},
+				"url": {
+					"raw": "{{tnccloud}}api/BrandCategory",
+					"host": [
+						"{{tnccloud}}api"
+					],
+					"path": [
+						"BrandCategory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "department",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{tnccloud}}api/department?siteCode=TN01",
+					"host": [
+						"{{tnccloud}}api"
+					],
+					"path": [
+						"department"
+					],
+					"query": [
+						{
+							"key": "siteCode",
+							"value": "TN01"
+						}
+					]
+				},
+				"description": "Category Listing (Department), Service Listing"
+			},
+			"response": []
+		},
+		{
+			"name": "CartItemInput",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phoneNumber\":\"96918897\",\n\t\"customerCode\":\"GC01T1100002\",\n\t\"itemCode\":\"13100003\",\n\t\"itemDescription\":\"Body Shaping Cream\",\n\t\"itemQuantity\":1,\n\t\"itemPrice\":138.00,\n\t\"siteCode\":\"TN01\",\n\t\"redeemPoint\":\"0\",\n\t\"itemType\":1\n}\n"
+				},
+				"url": {
+					"raw": "{{tnccloud}}/api/CartItemInput",
+					"host": [
+						"{{tnccloud}}"
+					],
+					"path": [
+						"api",
+						"CartItemInput"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cartItemList",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"url": {
+					"raw": "{{tnccloud}}/api/cartItemList?siteCode=TN01&phoneNumber=&customerCode=GC01T1100002",
+					"host": [
+						"{{tnccloud}}"
+					],
+					"path": [
+						"api",
+						"cartItemList"
+					],
+					"query": [
+						{
+							"key": "siteCode",
+							"value": "TN01"
+						},
+						{
+							"key": "phoneNumber",
+							"value": ""
+						},
+						{
+							"key": "customerCode",
+							"value": "GC01T1100002"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CartItemDelete",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phoneNumber\":\"96918897\",\n\t\"customerCode\":\"GC01T1100002\",\n\t\"itemCode\":\"13100003\",\n\t\"itemDescription\":\"\",\n\t\"itemQuantity\":1,\n\t\"itemPrice\":0,\n\t\"siteCode\":\"TN01\"\n}\n"
+				},
+				"url": {
+					"raw": "{{tnccloud}}/api/CartItemDelete",
+					"host": [
+						"{{tnccloud}}"
+					],
+					"path": [
+						"api",
+						"CartItemDelete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cartSummary",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"url": {
+					"raw": "{{tnccloud}}api/cartSummary?siteCode=TN01&phoneNumber=&customerCode=GC01T1100002",
+					"host": [
+						"{{tnccloud}}api"
+					],
+					"path": [
+						"cartSummary"
+					],
+					"query": [
+						{
+							"key": "siteCode",
+							"value": "TN01"
+						},
+						{
+							"key": "phoneNumber",
+							"value": ""
+						},
+						{
+							"key": "customerCode",
+							"value": "GC01T1100002"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cartAllItemDelete",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phoneNumber\":\"96918897\",\n\t\"customerCode\":\"GC01T1100002\",\n\t\"siteCode\":\"TN01\"\n}"
+				},
+				"url": {
+					"raw": "{{tnccloud}}api/cartAllItemDelete",
+					"host": [
+						"{{tnccloud}}api"
+					],
+					"path": [
+						"cartAllItemDelete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "myAddress",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"url": {
+					"raw": "{{tnccloud}}/api/myAddress?phoneNumber=96918897&customerCode=GC01T1100002&addressType=Shipping&siteCode=TN01",
+					"host": [
+						"{{tnccloud}}"
+					],
+					"path": [
+						"api",
+						"myAddress"
+					],
+					"query": [
+						{
+							"key": "phoneNumber",
+							"value": "96918897"
+						},
+						{
+							"key": "customerCode",
+							"value": "GC01T1100002"
+						},
+						{
+							"key": "addressType",
+							"value": "Shipping"
+						},
+						{
+							"key": "siteCode",
+							"value": "TN01"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createAddressTnc",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phoneNumber\":\"96918897\",\n\t\"customerCode\":\"GC01T1100002\",\n\t\"customerName\":\"CHRIS TAN\",\n\t\"addressType\":\"Shipping\",\n\t\"markDefault\":false,\n\t\"address\":\"510 Mound Road\",\n\t\"locality\":\"Jalan Jim\",\n\t\"city\":\"KL\",\n\t\"state\":\"Selangor\",\n\t\"zipCode\":\"3215467\",\n\t\"country\":\"Malaysia\",\n\t\"siteCode\":\"TN01\"\n}\n"
+				},
+				"url": {
+					"raw": "{{tnccloud}}/api/createAddressTnc",
+					"host": [
+						"{{tnccloud}}"
+					],
+					"path": [
+						"api",
+						"createAddressTnc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "appTransSearchInvoiceDetail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"siteCode\":\"TN01\",\n\t\"customerName\":\"CHRIS TAN\",\n\t\"fromDate\":\"1900-01-01\",\n\t\"toDate\":\"2100-12-31\",\n\t\"staffName\":\"\",\n\t\"invoiceNo\":\"\"\n}"
+				},
+				"url": {
+					"raw": "{{tnccloud}}api/appTransSearchInvoiceDetail",
+					"host": [
+						"{{tnccloud}}api"
+					],
+					"path": [
+						"appTransSearchInvoiceDetail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateAddress",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phoneNumber\":\"96918897\",\n\t\"customerCode\":\"GC01T1100002\",\n\t\"customerName\":\"CHRIS TAN\",\n\t\"addressType\":\"Shipping\",\n\t\"markDefault\":true,\n\t\"address\":\"509 Napiers\",\n\t\"locality\":\"Jalan Jim\",\n\t\"city\":\"KL\",\n\t\"state\":\"Selangor\",\n\t\"zipCode\":\"321546\",\n\t\"country\":\"Malaysia\",\n\t\"siteCode\":\"TN01\"\n}"
+				},
+				"url": {
+					"raw": "{{tnccloud}}/api/updateAddress",
+					"host": [
+						"{{tnccloud}}"
+					],
+					"path": [
+						"api",
+						"updateAddress"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "customerCard",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{tnccloud}}/api/customerCard?siteCode=TN01&customerCode=GC01T1100002",
+					"host": [
+						"{{tnccloud}}"
+					],
+					"path": [
+						"api",
+						"customerCard"
+					],
+					"query": [
+						{
+							"key": "siteCode",
+							"value": "TN01"
+						},
+						{
+							"key": "customerCode",
+							"value": "GC01T1100002"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "customerCard",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"customerCode\":\"GC01T1100002\",\n\t\"siteCode\":\"TN01\",\n\t\"cardNumber\":\"123456789101112\",\n\t\"cardType\":\"Visa\",\n\t\"validFrom\":\"02/21\",\n\t\"validTo\":\"09/25\"\n}"
+				},
+				"url": {
+					"raw": "{{tnccloud}}/api/customerCard",
+					"host": [
+						"{{tnccloud}}"
+					],
+					"path": [
+						"api",
+						"customerCard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "customerReferalCode",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{tnccloud}}/api/customerReferalCode?customerCode=GC01T1100002",
+					"host": [
+						"{{tnccloud}}"
+					],
+					"path": [
+						"api",
+						"customerReferalCode"
+					],
+					"query": [
+						{
+							"key": "customerCode",
+							"value": "GC01T1100002"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "customerReferalCode",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"customerCode\":\"GC01T1100002\"\n}"
+				},
+				"url": {
+					"raw": "{{tnccloud}}/api/customerReferalCode",
+					"host": [
+						"{{tnccloud}}"
+					],
+					"path": [
+						"api",
+						"customerReferalCode"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateCustomerProfile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"customerCode\":\"GC01T1100002\",\n\t\"otp\":\"560191\",\n\t\"customerName\":\"\",\n\t\"phoneNumber\":\"96918897\",\n\t\"email\":\"\",\n\t\"password\":\"\"\n}"
+				},
+				"url": {
+					"raw": "{{tnccloud}}/api/updateCustomerProfile",
+					"host": [
+						"{{tnccloud}}"
+					],
+					"path": [
+						"api",
+						"updateCustomerProfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signUpOtp",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phoneNumber\":\"8807493200\"\n}"
+				},
+				"url": {
+					"raw": "{{tnccloud}}/api/signUpOtp",
+					"host": [
+						"{{tnccloud}}"
+					],
+					"path": [
+						"api",
+						"signUpOtp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signUpCustomer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"siteCode\":\"\",\r\n\"customerName\":\"Mèeran200\",\r\n\"phoneNumber\":\"8807493200\",\r\n\"passCode\":\"Ha@123\",\r\n\"customerEmail\":\"meeran200@gmail.com\",\r\n\"customerAddress\":\"Test\",\r\n\"referalCode\":\"\"\r\n}"
+				},
+				"url": {
+					"raw": "{{tnccloud}}/api/signUpCustomer",
+					"host": [
+						"{{tnccloud}}"
+					],
+					"path": [
+						"api",
+						"signUpCustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signUpOtpVerify",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t \"phoneNumber\":\"8807493200\",\n\t \"otp\":\"723609\",\n\t \"referalCode\":\"\"\n}"
+				},
+				"url": {
+					"raw": "{{tnccloud}}/api/signUpOtpVerify",
+					"host": [
+						"{{tnccloud}}"
+					],
+					"path": [
+						"api",
+						"signUpOtpVerify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "chatF21",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"siteCode\":\"TN01\",\n\"custCode\":\"GC01T1100002\",\n\"custName\":\"CHRIS TAN\",\n\"messageCode\":\"\",\n\"messageBody\":\"Hi.\",\n\"messageType\":\"Incoming\",\n\"empCode\":\"\",\n\"empName\":\"\"\n}"
+				},
+				"url": {
+					"raw": "{{tnccloud}}/api/chatF21",
+					"host": [
+						"{{tnccloud}}"
+					],
+					"path": [
+						"api",
+						"chatF21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "messageDetailsF21",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{tnccloud}}api/messageDetailsF21?messageCode=100001",
+					"host": [
+						"{{tnccloud}}api"
+					],
+					"path": [
+						"messageDetailsF21"
+					],
+					"query": [
+						{
+							"key": "messageCode",
+							"value": "100001"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "chatHistoryF21",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"url": {
+					"raw": "{{tnccloud}}api/chatHistoryF21?customerCode=GC01T1100002&fromDate=2021-05-11&toDate=2022-12-31",
+					"host": [
+						"{{tnccloud}}api"
+					],
+					"path": [
+						"chatHistoryF21"
+					],
+					"query": [
+						{
+							"key": "customerCode",
+							"value": "GC01T1100002"
+						},
+						{
+							"key": "fromDate",
+							"value": "2021-05-11"
+						},
+						{
+							"key": "toDate",
+							"value": "2022-12-31"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sitelisting",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{tnccloud}}/api/sitelisting?sitecode=",
+					"host": [
+						"{{tnccloud}}"
+					],
+					"path": [
+						"api",
+						"sitelisting"
+					],
+					"query": [
+						{
+							"key": "sitecode",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bookAppointmentTnc",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phoneNumber\":\"96918897\",\n\t\"customerCode\":\"GCHQ105171\",\n\t\"itemCode\":\"34300003\",\n\t\"appointmentDate\":\"2022-11-18\",\n\t\"appointmentTime\":\"13:00:00\",\n\t\"appointmentDuration\":90,\n\t\"siteCode\":\"TN01\",\n\t\"itemName\":\"Gua Sha For Back\",\n\t\"treatmentId\":\"\",\n\t\"appointmentRemark\":\"This is sample remark\",\n\t\"staffCode\":\"\",\n\t\"appointmentItemDetails\":[\n\t{\n\t\t\"lineNumber\":\"1\",\n\t\t\"itemCode\":\"34300003\",\n\t\t\"itemName\":\"Gua Sha For Back\",\n\t\t\"unitPrice\":68.00\n\t}\n\t]\n}"
+				},
+				"url": {
+					"raw": "{{tnccloud}}/api/bookAppointmentTncNew",
+					"host": [
+						"{{tnccloud}}"
+					],
+					"path": [
+						"api",
+						"bookAppointmentTncNew"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getStaffMemberList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"SiteListing\":[\n\t\t{\n\t\t\t\"siteCode\":\"TN01\"\n\t\t}],\n\t\"staffName\":\"\",\n\t\"staffCode\":\"\",\n\t\"userID\":\"\",\n\t\"siteCode\":\"TN01\",\n\t\"isActive\":\"1\"\n}"
+				},
+				"url": {
+					"raw": "{{tnccloud}}api/getStaffMemberList",
+					"host": [
+						"{{tnccloud}}api"
+					],
+					"path": [
+						"getStaffMemberList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAppointmentStaffListTnc",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"siteCode\":\"TN01\",\n\t\"apptDate\":\"2022-04-15\",\n    \"slotTimeIn24Hrs\":\"10:00\"\n}"
+				},
+				"url": {
+					"raw": "{{tnccloud}}api/getAppointmentStaffListTnc",
+					"host": [
+						"{{tnccloud}}api"
+					],
+					"path": [
+						"getAppointmentStaffListTnc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "feedbackF21",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"siteCode\":\"TN01\",\n\t\"customerCode\":\"GC01T1100002\",\n\t\"date\":\"2021-11-25 00:00:00.000\",\n\t\"Remark\":\"I had a nice experience\",\n    \"rating\":5.0\n}"
+				},
+				"url": {
+					"raw": "{{tnccloud}}/api/feedbackF21",
+					"host": [
+						"{{tnccloud}}"
+					],
+					"path": [
+						"api",
+						"feedbackF21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CustomerReferalF21",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"customerCode\":\"GC01T1100002\",\n \"referalName\":\"Suresh\",\n \"referalPhoneNo\":\"88025478\",\n \"referalDate\":\"2021-11-26\",\n \"createdBy\":\"GC01T1100002\",\n \"siteCode\":\"TN01\"\n}"
+				},
+				"url": {
+					"raw": "{{tnccloud}}api/CustomerReferalF21",
+					"host": [
+						"{{tnccloud}}api"
+					],
+					"path": [
+						"CustomerReferalF21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CustomerReferalF21",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"url": {
+					"raw": "{{tnccloud}}/api/CustomerReferalF21?customerCode=GC01T1100002",
+					"host": [
+						"{{tnccloud}}"
+					],
+					"path": [
+						"api",
+						"CustomerReferalF21"
+					],
+					"query": [
+						{
+							"key": "customerCode",
+							"value": "GC01T1100002"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "appointmentCancel",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"appointmentCode\":\"TN01WAP100087\"\n}"
+				},
+				"url": {
+					"raw": "{{tnccloud}}/api/appointmentCancel",
+					"host": [
+						"{{tnccloud}}"
+					],
+					"path": [
+						"api",
+						"appointmentCancel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getSaloonList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{tnccloud}}/api/getSaloonList?siteCode=&userID=&hq=0",
+					"host": [
+						"{{tnccloud}}"
+					],
+					"path": [
+						"api",
+						"getSaloonList"
+					],
+					"query": [
+						{
+							"key": "siteCode",
+							"value": ""
+						},
+						{
+							"key": "userID",
+							"value": ""
+						},
+						{
+							"key": "hq",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "StripeCustomerCreate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"customerName\":\"Thomas1\",\n\"customerEmail\":\"Thomas1\",\n\"customerPhone\":\"90990087\"\n}"
+				},
+				"url": {
+					"raw": "{{tnccloud}}/api/StripeCustomerCreate",
+					"host": [
+						"{{tnccloud}}"
+					],
+					"path": [
+						"api",
+						"StripeCustomerCreate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "StripePaymentIntentCreate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"customerId\":\"cus_KqYg8oHccpgvPA\",\n\t\"customerCode\":\"GC01T1100002\",\n\t\"amount\":138,\n\t\"currency\":\"usd\"\n}"
+				},
+				"url": {
+					"raw": "{{tnccloud}}/api/StripePaymentIntentCreate",
+					"host": [
+						"{{tnccloud}}"
+					],
+					"path": [
+						"api",
+						"StripePaymentIntentCreate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "StripePaymentIntentConfirm",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"cardNumber\":\"4242424242424242\",\n\t\"expMonth\":12,\n\t\"expYear\":\"2022\",\n\t\"cvc\":\"314\",\n\t\"paymentIntentId\":\"pi_3M6YVTKBa1xAtzRk1aaXg3k9\",\n\t\"paymentType\":\"Credit Card\",\n\t\"transactionId\":\"100004\"\n}"
+				},
+				"url": {
+					"raw": "{{tnccloud}}/api/StripePaymentIntentConfirm",
+					"host": [
+						"{{tnccloud}}"
+					],
+					"path": [
+						"api",
+						"StripePaymentIntentConfirm"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateProfileF21",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "jsonKey",
+							"value": "{\"siteCode\":\"\",\"phoneNumber\":\"8744956688\",\"customerCode\":\"GCHQ105216\",\"notificationFlag\":1}",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/Desktop/Facial Reminder.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{tncurl}}/api/updateProfileF21",
+					"host": [
+						"{{tncurl}}"
+					],
+					"path": [
+						"api",
+						"updateProfileF21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "appTransPostSalesF21",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cartToken\":\"100004\",\n    \"siteCode\":\"TN01\",\n    \"userID\":\"CHRIS\",\n    \"salesDate\":\"2022-11-21T05:48:38.308Z\",\n    \"salesStatus\":\"SA\",\n    \"salesType\":\"Receipt\",\n    \"totalQuantity\":1,\n    \"staffCode\":\"100001\",\n    \"customerCode\":\"GC01T1100002\",\n    \"totalAmount\":138,\n    \"totalDiscount\":0,\n    \"totalGST\":0,\n    \"depositAmount\":138,\n    \"transactionDetails\":[\n        {\"lineNumber\":1,\n        \"lineStatus\":\"SA\",\n        \"lineType\":\"PRODUCT\",\n        \"itemCode\":\"13100003\",\n        \"itemName\":\"Body Shaping Cream\",\n        \"itemQty\":1,\n        \"holdItemQty\":1,\n        \"balanceQty\":0,\n        \"unitPrice\":138,\n        \"unitDiscount\":0,\n        \"promoPrice\":138,\n        \"itemAmount\":138,\n        \"salesAmount\":138,\n        \"depositAmount\":138,\n        \"gstAmountCollected\":0,\n        \"staffcode\":\"100001\",\n        \"isFOC\":false,\n        \"isFirstTreatmentDone\":false,\n        \"isHoldItem\":true\n        }],\n    \"payDetails\":[\n        {\"lineNumber\":\"1\",\n        \"paymentGroup\":\"CARD\",\n        \"paymentType\":\"VS\",\n        \"paymentDescription\":\"VISA\",\n        \"paymentAmount\":138,\n        \"payActualAmount\":138,\n        \"payChange\":0,\n        \"payCurrency\":\"US\"\n        }]\n    }"
+				},
+				"url": {
+					"raw": "{{tnccloud}}/api/appTransPostSalesF21",
+					"host": [
+						"{{tnccloud}}"
+					],
+					"path": [
+						"api",
+						"appTransPostSalesF21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "appTransPostSalesF21Verify",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"cartToken\":\"100007\",\n\t\"userId\":\"Meeran\",\n\t\"paymentMethod\":\"Gpay\",\n\t\"paymentReferenceNo\":\"1234567890\",\n\t\"paymentStatus\":\"Success\"\n}\n"
+				},
+				"url": {
+					"raw": "http://localhost/Publish_SequoiaApi/api/appTransPostSalesF21Verify",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Publish_SequoiaApi",
+						"api",
+						"appTransPostSalesF21Verify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "appTransPostSalesF21-Service",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cartToken\":\"100026\",\n    \"siteCode\":\"GCHQ\",\n    \"userID\":\"CHRIS\",\n    \"salesDate\":\"2022-09-24T05:48:38.308Z\",\n    \"salesStatus\":\"SA\",\n    \"salesType\":\"Receipt\",\n    \"totalQuantity\":1,\n    \"staffCode\":\"100001\",\n    \"customerCode\":\"CUSTAPP001\",\n    \"totalAmount\":68,\n    \"totalDiscount\":0,\n    \"totalGST\":0,\n    \"depositAmount\":68,\n    \"transactionDetails\":[\n        {\"lineNumber\":1,\n        \"lineStatus\":\"SA\",\n        \"lineType\":\"SERVICE\",\n        \"itemCode\":\"34300003\",\n        \"itemName\":\"Gua Sha For Back\",\n        \"itemQty\":1,\n        \"balanceQty\":0,\n        \"unitPrice\":68,\n        \"unitDiscount\":0,\n        \"promoPrice\":68,\n        \"itemAmount\":68,\n        \"salesAmount\":68,\n        \"depositAmount\":68,\n        \"gstAmountCollected\":0,\n        \"staffcode\":\"100001\",\n        \"isFOC\":false,\n        \"isFirstTreatmentDone\":false,\n        \"isHoldItem\":false\n        }],\n    \"payDetails\":[\n        {\"lineNumber\":\"1\",\n        \"paymentGroup\":\"CARD\",\n        \"paymentType\":\"VS\",\n        \"paymentDescription\":\"VISA\",\n        \"paymentAmount\":68,\n        \"payActualAmount\":68,\n        \"payChange\":0,\n        \"payCurrency\":\"US\"\n        }]\n    }"
+				},
+				"url": {
+					"raw": "{{tncurl}}/api/appTransPostSalesF21",
+					"host": [
+						"{{tncurl}}"
+					],
+					"path": [
+						"api",
+						"appTransPostSalesF21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{tncurl}}/api/mypackages",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"siteCode\":\"GCHQ\",\r\n    \"phoneNumber\":\"\",\r\n    \"customerCode\":\"GCHQ105203\"\r\n}"
+				},
+				"url": {
+					"raw": "{{tnccloud}}/api/mypackages",
+					"host": [
+						"{{tnccloud}}"
+					],
+					"path": [
+						"api",
+						"mypackages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{tncurl}}/api/checkAppointmentSlot",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"phoneNumber\":\"96918897\",\r\n\t\"customerCode\":\"GC01T1100002\",\r\n\t\"itemCode\":\"34300003\",\r\n\t\"appointmentDate\":\"2022-03-23\",\r\n\t\"appointmentTime\":\"16:00:00\",\r\n\t\"appointmentDuration\":90,\r\n\t\"siteCode\":\"TN01\",\r\n\t\"itemName\":\"Gua Sha For Back\",\r\n\t\"treatmentId\":\"\",\r\n\t\"appointmentRemark\":\"This is sample remark\",\r\n\t\"staffCode\":\"HQ100002\",\r\n\t\"appointmentItemDetails\":[\r\n\t{\r\n\t\t\"lineNumber\":\"1\",\r\n\t\t\"itemCode\":\"34300003\",\r\n\t\t\"itemName\":\"Gua Sha For Back\",\r\n\t\t\"unitPrice\":68.00\r\n\t}\r\n\t]\r\n}"
+				},
+				"url": {
+					"raw": "{{tncurl}}/api/checkAppointmentSlot",
+					"host": [
+						"{{tncurl}}"
+					],
+					"path": [
+						"api",
+						"checkAppointmentSlot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AvailableSlotsTnc",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"siteCode\":\"TN01\",\r\n\t\"slotDate\":\"2022-04-15\"\r\n}"
+				},
+				"url": {
+					"raw": "{{tncurl}}api/AvailableSlotsTnc",
+					"host": [
+						"{{tncurl}}api"
+					],
+					"path": [
+						"AvailableSlotsTnc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerCode\":\"GCHQ105233\"\r\n}"
+				},
+				"url": {
+					"raw": "{{tncurl}}api/deleteUser",
+					"host": [
+						"{{tncurl}}api"
+					],
+					"path": [
+						"deleteUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCustomerPointsNew",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{tncurl}}/api/getCustomerPointsNew?customerCode=GC01T1100002",
+					"host": [
+						"{{tncurl}}"
+					],
+					"path": [
+						"api",
+						"getCustomerPointsNew"
+					],
+					"query": [
+						{
+							"key": "customerCode",
+							"value": "GC01T1100002"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{local}}/api/adminPanelLogin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"userID\":\"sys\",\r\n\"password\":\"bigtree\",\r\n\"storeCode\":\"F21\"\r\n}"
+				},
+				"url": {
+					"raw": "{{f21live}}/api/adminPanelLogin",
+					"host": [
+						"{{f21live}}"
+					],
+					"path": [
+						"api",
+						"adminPanelLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{tnccloud}}/api/adminPromotionList?siteCode=GCHQ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{tnccloud}}/api/adminPromotionList?siteCode=GCHQ",
+					"host": [
+						"{{tnccloud}}"
+					],
+					"path": [
+						"api",
+						"adminPromotionList"
+					],
+					"query": [
+						{
+							"key": "siteCode",
+							"value": "GCHQ"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

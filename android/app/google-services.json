@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "273202618927",
+    "project_id": "sensehawk-102e5",
+    "storage_bucket": "sensehawk-102e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:273202618927:android:13461a4f35d2c12bbe9cda",
+        "android_client_info": {
+          "package_name": "com.sensehawk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaGSKgy5DEfV-vYax-sOQKaoUr6qTYdeg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

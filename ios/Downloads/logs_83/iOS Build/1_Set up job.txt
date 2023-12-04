@@ -1,0 +1,39 @@
+2023-06-14T08:42:49.1130330Z Current runner version: '2.304.0'
+2023-06-14T08:42:49.1258480Z ##[group]Operating System
+2023-06-14T08:42:49.1259300Z macOS
+2023-06-14T08:42:49.1259650Z 12.6.5
+2023-06-14T08:42:49.1259970Z 21G531
+2023-06-14T08:42:49.1260330Z ##[endgroup]
+2023-06-14T08:42:49.1260720Z ##[group]Runner Image
+2023-06-14T08:42:49.1261130Z Image: macos-12
+2023-06-14T08:42:49.1261530Z Version: 20230516.1
+2023-06-14T08:42:49.1262150Z Included Software: https://github.com/actions/runner-images/blob/macOS-12/20230516.1/images/macos/macos-12-Readme.md
+2023-06-14T08:42:49.1262910Z Image Release: https://github.com/actions/runner-images/releases/tag/macOS-12%2F20230516.1
+2023-06-14T08:42:49.1263440Z ##[endgroup]
+2023-06-14T08:42:49.1263880Z ##[group]Runner Image Provisioner
+2023-06-14T08:42:49.1264310Z 2.0.236.1
+2023-06-14T08:42:49.1264650Z ##[endgroup]
+2023-06-14T08:42:49.1266100Z ##[group]GITHUB_TOKEN Permissions
+2023-06-14T08:42:49.1266950Z Actions: write
+2023-06-14T08:42:49.1267350Z Checks: write
+2023-06-14T08:42:49.1267720Z Contents: write
+2023-06-14T08:42:49.1268350Z Deployments: write
+2023-06-14T08:42:49.1268760Z Discussions: write
+2023-06-14T08:42:49.1269140Z Issues: write
+2023-06-14T08:42:49.1269500Z Metadata: read
+2023-06-14T08:42:49.1269870Z Packages: write
+2023-06-14T08:42:49.1270240Z Pages: write
+2023-06-14T08:42:49.1270620Z PullRequests: write
+2023-06-14T08:42:49.1271040Z RepositoryProjects: write
+2023-06-14T08:42:49.1271470Z SecurityEvents: write
+2023-06-14T08:42:49.1271870Z Statuses: write
+2023-06-14T08:42:49.1272250Z ##[endgroup]
+2023-06-14T08:42:49.1277620Z Secret source: Actions
+2023-06-14T08:42:49.1278230Z Prepare workflow directory
+2023-06-14T08:42:49.2868450Z Prepare all required actions
+2023-06-14T08:42:49.3127310Z Getting action download info
+2023-06-14T08:42:49.6785230Z Download action repository 'actions/checkout@v2' (SHA:ee0669bd1cc54295c223e0bb666b733df41de1c5)
+2023-06-14T08:42:50.9033420Z Download action repository 'actions/setup-node@v3' (SHA:64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c)
+2023-06-14T08:42:51.4936790Z Download action repository 'actions/cache@v2' (SHA:8492260343ad570701412c2f464a5877dc76bace)
+2023-06-14T08:42:51.9888030Z Download action repository 'actions/upload-artifact@v3' (SHA:0b7f8abb1508181956e8e162db84b466c27e18ce)
+2023-06-14T08:42:52.5444100Z Complete job name: iOS Build

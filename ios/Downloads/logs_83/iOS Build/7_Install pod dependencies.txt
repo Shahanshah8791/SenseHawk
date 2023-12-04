@@ -1,0 +1,179 @@
+2023-06-14T08:47:31.4595720Z ##[group]Run ls && cd apps/candidate/ios && pod install
+2023-06-14T08:47:31.4596220Z [36;1mls && cd apps/candidate/ios && pod install[0m
+2023-06-14T08:47:45.0438550Z shell: /bin/bash -e {0}
+2023-06-14T08:47:45.0440620Z env:
+2023-06-14T08:47:45.0441080Z   WORKSPACE: apps/candidate/ios/***.xcworkspace
+2023-06-14T08:47:45.0442490Z   SCHEME: ***
+2023-06-14T08:47:45.0442830Z   CONFIGURATION: Release
+2023-06-14T08:47:45.0443200Z   ARCHIVE_PATH: build/***.xcarchive
+2023-06-14T08:47:45.0443520Z   EXPORT_PATH_PROD: prod/
+2023-06-14T08:47:45.0444790Z   PLIST_PATH_PROD: ios/***/ProdExport.plist
+2023-06-14T08:47:45.0445800Z   ARTIFACT_NAME: ***.ipa
+2023-06-14T08:47:45.0449290Z   ARTIFACT_PATH_PROD: prod/
+2023-06-14T08:47:45.0449720Z   UPLOAD_FILE_PROD: prod/***.ipa
+2023-06-14T08:47:45.0481400Z   BUILD_CERTIFICATE_BASE64: ***
+2023-06-14T08:47:45.0482030Z   P12_PASSWORD: ***
+2023-06-14T08:47:45.3168010Z   BUILD_PROVISION_PROFILE_BASE64: ***
+2023-06-14T08:47:45.3168620Z   KEYCHAIN_PASSWORD: ***
+2023-06-14T08:47:45.3169130Z   IOS_TEAM_ID: ***
+2023-06-14T08:47:45.3169620Z   APPSTORE_ISSUER_ID: ***
+2023-06-14T08:47:45.3169990Z   APPSTORE_API_KEY_ID: ***
+2023-06-14T08:47:45.3171180Z   APPSTORE_API_PRIVATE_KEY: ***
+2023-06-14T08:47:45.3171550Z   APP_PROJECT_NAME: ***
+2023-06-14T08:47:45.3171830Z ##[endgroup]
+2023-06-14T08:47:45.4061430Z README.md
+2023-06-14T08:47:45.4063070Z apps
+2023-06-14T08:47:45.4064390Z babel.config.json
+2023-06-14T08:47:45.4065190Z jest.config.ts
+2023-06-14T08:47:45.4070790Z jest.preset.js
+2023-06-14T08:47:45.4074910Z libs
+2023-06-14T08:47:45.4076510Z node_modules
+2023-06-14T08:47:45.4077180Z nx.json
+2023-06-14T08:47:45.4078360Z package.json
+2023-06-14T08:47:45.4080390Z trigger_release_android.sh
+2023-06-14T08:47:45.4081820Z trigger_release_firebase.sh
+2023-06-14T08:47:45.4083260Z tsconfig.base.json
+2023-06-14T08:47:45.4088460Z yarn.lock
+2023-06-14T08:48:41.4816010Z RNFBMessaging: Using overridden static_framework value of 'true'
+2023-06-14T08:48:41.4822870Z RNFBApp: Using overridden static_framework value of 'true'
+2023-06-14T08:48:41.4831820Z Adding a custom script phase for Pod RNFBApp: [RNFB] Core Configuration
+2023-06-14T08:48:41.4836670Z RNFBAnalytics: Using default Firebase/Analytics with Ad Ids. May require App Tracking Transparency. Not allowed for Kids apps.
+2023-06-14T08:48:41.4853900Z RNFBAnalytics: You may set variable `$RNFirebaseAnalyticsWithoutAdIdSupport=true` in Podfile to use analytics without ad ids.
+2023-06-14T08:48:41.4876460Z RNFBAnalytics: Using overridden static_framework value of 'true'
+2023-06-14T08:48:41.4890000Z RNFBDynamicLinks: Using overridden static_framework value of 'true'
+2023-06-14T08:48:41.4902740Z Auto-linking React Native modules for target `***`: BVLinearGradient, CodePush, RNAudioRecorderPlayer, RNCAsyncStorage, RNCClipboard, RNCMaskedView, RNDateTimePicker, RNDeviceInfo, RNFBAnalytics, RNFBApp, RNFBDynamicLinks, RNFBMessaging, RNFastImage, RNGestureHandler, RNGoogleSignin, RNImageCropPicker, RNInAppBrowser, RNNotifee, RNPermissions, RNRate, RNReactNativeHapticFeedback, RNSVG, RNScreens, RNWootric, ReactNativeMoEngage, lottie-react-native, react-native-amplitude-analytics, react-native-config, react-native-document-picker, react-native-file-access, react-native-netinfo, react-native-otp-verify, react-native-pager-view, react-native-render-html, react-native-safe-area-context, react-native-track-player, react-native-video, and react-native-webview
+2023-06-14T08:48:41.7430530Z [Codegen] Generating ./build/generated/ios/React-Codegen.podspec.json
+2023-06-14T08:48:41.7433520Z Analyzing dependencies
+2023-06-14T08:48:41.7510780Z Fetching podspec for `DoubleConversion` from `../../../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`
+2023-06-14T08:48:41.7563190Z [Codegen] Found FBReactNativeSpec
+2023-06-14T08:48:41.8401460Z Fetching podspec for `RCT-Folly` from `../../../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`
+2023-06-14T08:48:41.8698780Z RNFBAnalytics: Using default Firebase/Analytics with Ad Ids. May require App Tracking Transparency. Not allowed for Kids apps.
+2023-06-14T08:48:41.8705630Z RNFBAnalytics: You may set variable `$RNFirebaseAnalyticsWithoutAdIdSupport=true` in Podfile to use analytics without ad ids.
+2023-06-14T08:48:41.8716150Z RNFBAnalytics: Using overridden static_framework value of 'true'
+2023-06-14T08:48:41.8731860Z RNFBApp: Using overridden static_framework value of 'true'
+2023-06-14T08:48:41.8767220Z RNFBDynamicLinks: Using overridden static_framework value of 'true'
+2023-06-14T08:48:41.8799770Z RNFBMessaging: Using overridden static_framework value of 'true'
+2023-06-14T08:48:43.6560940Z Fetching podspec for `RNSentry` from `../../../node_modules/@sentry/react-native/RNSentry.podspec`
+2023-06-14T08:48:43.7403370Z Fetching podspec for `boost` from `../../../node_modules/react-native/third-party-podspecs/boost.podspec`
+2023-06-14T08:48:43.7434490Z Fetching podspec for `glog` from `../../../node_modules/react-native/third-party-podspecs/glog.podspec`
+2023-06-14T08:49:12.0823260Z Adding spec repo `trunk` with CDN `https://cdn.cocoapods.org/`
+2023-06-14T08:49:12.0824560Z Downloading dependencies
+2023-06-14T08:49:12.0825790Z Installing Amplitude-iOS (4.3.1)
+2023-06-14T08:49:12.9128220Z Installing AppAuth (1.6.2)
+2023-06-14T08:49:14.1802940Z Installing BVLinearGradient (2.6.2)
+2023-06-14T08:49:14.1814860Z Installing Base64 (1.1.2)
+2023-06-14T08:49:14.8408980Z Installing CodePush (7.1.0)
+2023-06-14T08:49:14.8409640Z Installing DoubleConversion (1.1.6)
+2023-06-14T08:49:16.1481710Z Installing FBLazyVector (0.70.5)
+2023-06-14T08:49:16.1482980Z Installing FBReactNativeSpec (0.70.5)
+2023-06-14T08:49:16.1776720Z Installing Firebase (10.7.0)
+2023-06-14T08:49:24.5033450Z Installing FirebaseAnalytics (10.7.0)
+2023-06-14T08:49:24.8364560Z Installing FirebaseCore (10.7.0)
+2023-06-14T08:49:32.7618270Z Installing FirebaseCoreExtension (10.7.0)
+2023-06-14T08:49:40.5231070Z Installing FirebaseCoreInternal (10.10.0)
+2023-06-14T08:49:48.8427460Z Installing FirebaseDynamicLinks (10.7.0)
+2023-06-14T08:49:57.3650890Z Installing FirebaseInstallations (10.10.0)
+2023-06-14T08:50:05.7729430Z Installing FirebaseMessaging (10.7.0)
+2023-06-14T08:50:13.4905960Z Installing GTMAppAuth (1.3.1)
+2023-06-14T08:50:14.3205980Z Installing GTMSessionFetcher (2.3.0)
+2023-06-14T08:50:15.2053620Z Installing GoogleAppMeasurement (10.7.0)
+2023-06-14T08:50:15.8794240Z Installing GoogleDataTransport (9.2.3)
+2023-06-14T08:50:17.0306010Z Installing GoogleSignIn (6.2.4)
+2023-06-14T08:50:18.1854210Z Installing GoogleUtilities (7.11.1)
+2023-06-14T08:50:19.0933160Z Installing JWT (3.0.0-beta.14)
+2023-06-14T08:50:20.5918900Z Installing MoEngage-iOS-SDK (9.8.2)
+2023-06-14T08:50:30.3708280Z Installing MoEngageInApp (4.8.3)
+2023-06-14T08:50:31.8761680Z Installing MoEngagePluginBase (4.2.1)
+2023-06-14T08:50:32.7231390Z Installing MoEngageRichNotification (7.8.0)
+2023-06-14T08:50:33.7980490Z Installing Permission-AppTrackingTransparency (3.8.0)
+2023-06-14T08:50:33.7981460Z Installing Permission-MediaLibrary (3.8.0)
+2023-06-14T08:50:33.7982060Z Installing Permission-Microphone (3.8.0)
+2023-06-14T08:50:33.7982780Z Installing Permission-PhotoLibrary (3.8.0)
+2023-06-14T08:50:33.7983500Z Installing Permission-PhotoLibraryAddOnly (3.8.0)
+2023-06-14T08:50:33.7984020Z Installing PromisesObjC (2.2.0)
+2023-06-14T08:50:34.7171350Z Installing RCT-Folly (2021.07.22.00)
+2023-06-14T08:50:38.9059590Z Installing RCTRequired (0.70.5)
+2023-06-14T08:50:38.9060360Z Installing RCTTypeSafety (0.70.5)
+2023-06-14T08:50:38.9060910Z Installing RNAudioRecorderPlayer (3.5.3)
+2023-06-14T08:50:38.9061480Z Installing RNCAsyncStorage (1.17.10)
+2023-06-14T08:50:38.9061980Z Installing RNCClipboard (1.5.1)
+2023-06-14T08:50:38.9062490Z Installing RNCMaskedView (0.2.9)
+2023-06-14T08:50:38.9062970Z Installing RNDateTimePicker (6.7.5)
+2023-06-14T08:50:38.9063480Z Installing RNDeviceInfo (10.6.0)
+2023-06-14T08:50:38.9064170Z Installing RNFBAnalytics (17.5.0)
+2023-06-14T08:50:38.9064680Z Installing RNFBApp (17.5.0)
+2023-06-14T08:50:38.9065230Z Installing RNFBDynamicLinks (17.5.0)
+2023-06-14T08:50:38.9065900Z Installing RNFBMessaging (17.5.0)
+2023-06-14T08:50:38.9067240Z Installing RNFS (2.20.0)
+2023-06-14T08:50:38.9067740Z Installing RNFastImage (8.6.3)
+2023-06-14T08:50:38.9068360Z Installing RNGestureHandler (2.10.1)
+2023-06-14T08:50:38.9068950Z Installing RNGoogleSignin (9.1.0)
+2023-06-14T08:50:38.9069430Z Installing RNImageCropPicker (0.39.0)
+2023-06-14T08:50:38.9069960Z Installing RNInAppBrowser (3.7.0)
+2023-06-14T08:50:38.9070420Z Installing RNNotifee (7.7.1)
+2023-06-14T08:50:38.9070840Z Installing RNPermissions (3.8.0)
+2023-06-14T08:50:38.9071290Z Installing RNRate (1.2.12)
+2023-06-14T08:50:38.9071830Z Installing RNReactNativeHapticFeedback (1.14.0)
+2023-06-14T08:50:38.9072540Z Installing RNSVG (13.2.0)
+2023-06-14T08:50:38.9073030Z Installing RNScreens (3.20.0)
+2023-06-14T08:50:38.9073480Z Installing RNSentry (4.9.0)
+2023-06-14T08:50:40.1832360Z Installing RNWootric (1.0.0)
+2023-06-14T08:50:40.1833020Z Installing React (0.70.5)
+2023-06-14T08:50:40.1835370Z Installing React-Codegen (0.70.5)
+2023-06-14T08:50:40.1836140Z Installing React-Core (0.70.5)
+2023-06-14T08:50:40.1837060Z Installing React-CoreModules (0.70.5)
+2023-06-14T08:50:40.1837890Z Installing React-RCTActionSheet (0.70.5)
+2023-06-14T08:50:40.1838520Z Installing React-RCTAnimation (0.70.5)
+2023-06-14T08:50:40.1839170Z Installing React-RCTBlob (0.70.5)
+2023-06-14T08:50:40.1839800Z Installing React-RCTImage (0.70.5)
+2023-06-14T08:50:40.1840520Z Installing React-RCTLinking (0.70.5)
+2023-06-14T08:50:40.1841260Z Installing React-RCTNetwork (0.70.5)
+2023-06-14T08:50:40.1842140Z Installing React-RCTSettings (0.70.5)
+2023-06-14T08:50:40.1842760Z Installing React-RCTText (0.70.5)
+2023-06-14T08:50:40.1843480Z Installing React-RCTVibration (0.70.5)
+2023-06-14T08:50:40.1844140Z Installing React-bridging (0.70.5)
+2023-06-14T08:50:40.1844800Z Installing React-callinvoker (0.70.5)
+2023-06-14T08:50:40.1845420Z Installing React-cxxreact (0.70.5)
+2023-06-14T08:50:40.1846050Z Installing React-jsi (0.70.5)
+2023-06-14T08:50:40.1846690Z Installing React-jsiexecutor (0.70.5)
+2023-06-14T08:50:40.1847540Z Installing React-jsinspector (0.70.5)
+2023-06-14T08:50:40.1848160Z Installing React-logger (0.70.5)
+2023-06-14T08:50:40.1849050Z Installing React-perflogger (0.70.5)
+2023-06-14T08:50:40.1849770Z Installing React-runtimeexecutor (0.70.5)
+2023-06-14T08:50:40.1850300Z Installing ReactCommon (0.70.5)
+2023-06-14T08:50:40.1850830Z Installing ReactNativeMoEngage (8.5.0)
+2023-06-14T08:50:40.2088860Z Installing SDWebImage (5.11.1)
+2023-06-14T08:50:41.7710740Z Installing SDWebImageWebPCoder (0.8.5)
+2023-06-14T08:50:42.7061450Z Installing SSZipArchive (2.2.3)
+2023-06-14T08:50:43.6417950Z Installing Sentry (7.31.2)
+2023-06-14T08:50:47.3384750Z Installing SwiftAudioEx (0.15.3)
+2023-06-14T08:50:49.3747310Z Installing TOCropViewController (2.6.1)
+2023-06-14T08:50:50.2910540Z Installing WootricSDK (0.26.1)
+2023-06-14T08:50:51.2327040Z Installing Yoga (1.14.0)
+2023-06-14T08:50:51.2344390Z Installing ZIPFoundation (0.9.11)
+2023-06-14T08:50:52.7310720Z Installing boost (1.76.0)
+2023-06-14T08:53:20.9610120Z Installing fmt (6.2.1)
+2023-06-14T08:53:21.8811960Z Installing glog (0.3.5)
+2023-06-14T08:53:53.6201010Z Installing libwebp (1.2.4)
+2023-06-14T08:53:54.8555470Z Installing lottie-ios (3.4.4)
+2023-06-14T08:54:01.3725380Z Installing lottie-react-native (5.1.6)
+2023-06-14T08:54:01.3740720Z Installing nanopb (2.30909.0)
+2023-06-14T08:54:16.7390090Z Installing react-native-amplitude-analytics (0.3.0)
+2023-06-14T08:54:16.7391020Z Installing react-native-config (1.4.11)
+2023-06-14T08:54:16.7392380Z Installing react-native-document-picker (8.2.1)
+2023-06-14T08:54:16.7393540Z Installing react-native-file-access (2.6.0)
+2023-06-14T08:54:16.7394600Z Installing react-native-netinfo (9.3.10)
+2023-06-14T08:54:16.7395770Z Installing react-native-otp-verify (1.1.5)
+2023-06-14T08:54:16.7397180Z Installing react-native-pager-view (6.2.0)
+2023-06-14T08:54:16.7398270Z Installing react-native-render-html (6.3.4)
+2023-06-14T08:54:16.7399500Z Installing react-native-safe-area-context (4.5.3)
+2023-06-14T08:54:16.7400570Z Installing react-native-track-player (3.2.0)
+2023-06-14T08:54:16.7402560Z Installing react-native-video (5.2.1)
+2023-06-14T08:54:16.7403580Z Installing react-native-webview (11.26.1)
+2023-06-14T08:54:16.7404500Z Generating Pods project
+2023-06-14T08:54:16.7405330Z Setting REACT_NATIVE build settings
+2023-06-14T08:54:16.7406790Z Setting CLANG_CXX_LANGUAGE_STANDARD to c++17 on /Users/runner/work/mobile-monorepo/mobile-monorepo/apps/candidate/ios/***.xcodeproj
+2023-06-14T08:54:16.7407790Z Pod install took 348 [s] to run
+2023-06-14T08:54:19.2386470Z [Nx] Updating build settings to support custom port
+2023-06-14T08:54:19.2487250Z Integrating client project
+2023-06-14T08:54:19.2551690Z Pod installation complete! There are 81 dependencies from the Podfile and 112 total pods installed.
